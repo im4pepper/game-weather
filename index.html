@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game Weather</title>
+	<link rel="stylesheet" href="CSS/styles.css" >
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<section id="header">
+		<div>
+			<h1>Game Weather</h1>
+			<hr>
+			<h2>Get real time weather forecasts for your game</h2> <!--What's the weather going to be at the game you're going to?-->
+			<hr>
+		</div>
+		<div>
+		<h3>Simply enter the name of the stadium below to get the weather forecast.</h3>
+		<form class="location" id="search-term">
+			<input id="venue" type="text" placeholder='e.g., "Safeco" or "Fenway"' name="tags" size="24" autofocus required>
+			<input id="button" type="submit" value="Submit">
+		</form>
+		</div>
+	</section>
+	<section id="results">
+	<!--<div class="ping">
+			<p class="back">Stadium: Safeco Field</p>
+			<p class="back">Weather: Overcast; 56&deg;</p>
+		</div>-->
+		<div id="ping"></div>
+	<!--HIDDEN DIV-->
+	<div class="templates hidden">
+		<dl class="result venue">
+			<dt>Venue</dt>
+				<dd class="venue"></dd>
+			<dt>Weather</dt>
+				<dd class="weather"></dd>
+		</dl>
+		<div class="error">
+			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+		</div>
+	</div>
+	<!--HIDDEN DIV-->
+	</section>
+</body>
+</html>
